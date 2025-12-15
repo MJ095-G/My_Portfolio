@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="Lab_4.css">
+</head>
+
+<body>
+
+    <div id="greetingPopup" class="popup"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="https://i.pinimg.com/originals/03/f4/82/03f4823610a818fec2387ebc59a83923.gif" class="onigiri">
+            </a>
+        </div>
+
+        <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Message Me</a>
+        </nav>
+
+        <button id="mode-switch" class="mode-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 
+                75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 
+                83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 
+                720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 
+                101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+            </svg>
+        </button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hi, It's <span class="gradient">Maica</span></h1>
+            <h2>I’m a <span class="gradient job-title" id="jobTitle">WEB DEVELOPER</span></h2>
+
+            <p class="short-con">
+                Maica is a BSIT student at National University, passionate about
+                arts, design, and UI/UX development. Creative, collaborative,
+                and always eager to learn.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn" id="editBtn">Change Job Title</button>
+                <a href="#contact" class="secondary-btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <div class="circle-glow"></div>
+            <img src="Rabago.jfif" alt="Profile Image">
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-info">
+            Maica is a BSIT student at National University, Fairview Campus.
+            She is currently in her 2nd year of college and is determined to graduate with strong academic performance.
+            Since childhood, she has been passionate about arts and design, and she aspires to become a UI/UX designer.
+        </p>
+
+        <h3 class="section-title">Achievements</h3>
+        <ul class="Ach">
+            <li>Consistent honor student</li>
+            <li>Won in NSTP 2024</li>
+            <li>Survived as an IT student</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+
+        <button id="toggleButton" class="primary-btn">Toggle Skills</button>
+        <ul id="myList" class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Design</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Message Me</h2>
+
+        <form class="form">
+            <p class="name">Name:<br><input type="text" class="form-input" required></p>
+            <p class="email">Email:<br><input type="email" class="form-input" required></p>
+            <p class="message">Message:<br>
+                <textarea id="messBox" maxlength="500" class="form-input"></textarea>
+            </p>
+            <div id="charCounter" class="wordCount">500 characters left</div>
+
+            <p><input type="submit" value="Send" class="primary-btn"></p>
+        </form>
+    </section>
+
+    <footer class="footer">WebProg - Web Programming 2025</footer>
+
+    <script src="Lab_4.js"></script>
+</body>
+</html>

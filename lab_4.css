@@ -1,0 +1,315 @@
+:root {
+    --primary-color: purple;
+    --primary-light: plum;
+    --primary-dark: darkviolet;
+    --border-color: purple;
+    --text-shadow: 1px 1px 1px rgba(97, 86, 62, 0.8);
+}
+
+html {
+    scroll-padding-top: 120px; 
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+    background-image: url("https://wallpaperaccess.com/full/2641048.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--primary-light);
+    border-bottom: 3px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar nav a:hover {
+    color: var(--primary-dark);
+    transition: 0.3s;
+}
+
+.onigiri{
+    width: 60px;
+    height: 60px;
+}
+
+.menu{
+    font-size: 20px;
+    font-family: cursive;
+}
+
+/* mode switch */
+#mode-switch {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#mode-switch svg {
+    fill: var(--primary-color);
+}
+#mode-switch svg:last-child { display: none; }
+
+.darkmode #mode-switch svg:first-child { display: none; }
+.darkmode #mode-switch svg:last-child { display: block; }
+
+/* time */
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: purple;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: none;
+    font-family: cursive;
+    z-index: 1000;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 8%;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+.hero-text h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.hero-text h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.gradient {
+    background: linear-gradient(to right, purple, darkviolet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+    transition: 0.3s;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.hero-img img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid var(--primary-color);
+    box-shadow: 6px 6px 6px rgba(125, 124, 123, 0.8);
+}
+
+.short-con {
+    font-family: cursive;
+}
+
+#about {
+    margin-top: 20vh;
+}
+
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: var(--text-shadow);
+    margin-bottom: 20px;
+}
+
+.about-info {
+    font-size: 16px;
+    font-family: cursive;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.Ach li {
+    font-family: cursive;
+    margin: 8px 0;
+    list-style-type: none;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 15px;
+    background-color: #f0e0f8;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.skills-list li {
+    padding: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.form{
+    font-family: cursive;
+    color: purple;
+    font-size: 20px;
+}
+
+#messBox {
+    height: 150px;   
+    resize: vertical; 
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 9px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-light);
+    font-size: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.wordCount {
+    font-size: 14px;
+    color: purple;
+    font-family: cursive;
+}
+
+.footer {
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--primary-light);
+    padding: 20px 0;
+    border-top: 3px solid var(--border-color);
+}
+
+.darkmode {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://wallpaperaccess.com/full/2641048.gif");
+    color: white;
+}
+
+.darkmode .navbar {
+    background-color: #330033;
+    border-color: #993399;
+}
+
+.darkmode nav a {
+    color: #f0c0ff;
+}
+
+.darkmode .skills-list {
+    background-color: #1a001a;
+    border-color: #993399;
+}
+
+.darkmode .form-input {
+    background-color: #330033;
+    border-color: #993399;
+    color: white;
+}
+
+.darkmode .primary-btn {
+    background-color: #993399;
+}
+
+.darkmode .footer {
+    background-color: #330033;
+    color: #f0c0ff;
+}
+
+.darkmode .gradient {
+    background: linear-gradient(to right, plum, #993399);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.darkmode .section-title {
+    color: #f0c0ff;
+}
+
+.darkmode .wordCount {
+    color: #f0c0ff;
+}
+
+.darkmode .hero-img img {
+   border-color:#993399;
+}
+
+.darkmode .form{
+    color: #f0c0ff;
+}
